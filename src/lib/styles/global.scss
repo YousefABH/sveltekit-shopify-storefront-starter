@@ -1,0 +1,49 @@
+@use './utils';
+@use './vars';
+
+@font-face {
+	font-family: 'Inter Regular';
+	src: url(/fonts/Inter-Regular.ttf);
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: 'Inter Regular';
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #424242;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+:root {
+	font-size: 16px;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: unset;
+	text-decoration: none;
+}
+
+button:hover .spinner {
+	color: var(--secondary-color);
+	border-top-color: var(--primary-color);
+}

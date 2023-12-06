@@ -1,0 +1,48 @@
+@use './vars';
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
+.cl-btn {
+	border: none;
+	background: none;
+	font-family: inherit;
+}
+
+.cl-ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.df-btn {
+	border: var(--primary-border);
+	transition: all 0.2s;
+	color: var(--secondary-color);
+
+	&:hover {
+		color: var(--primary-color);
+		background-color: var(--secondary-color);
+	}
+}
+
+.backdrop {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
